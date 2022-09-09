@@ -1,0 +1,21 @@
+.myFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 100vw;
+}
+
+.myFooter div h1 {
+    padding-left: 5vw;
+}
+
+.myFooter:nth-child(2) {
+    font-size: 1.2em;
+    padding-right: 5vw;
+}
