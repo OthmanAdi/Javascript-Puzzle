@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+:root {
+    --c1: #483434;
+    --c2: #6B4F4F;
+    --c3: #781D42;
+    --c4: #FFF3E4;
+    --c5: #DE834D;
+    --c6: #F0D290;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+}
+
+.pageBody {
+    height: 100vh;
+    background:
+        radial-gradient(ellipse at top, var(--c1), var(--c2), var(--c3), transparent),
+        radial-gradient(ellipse at top, var(--c4), var(--c5), var(--c6), transparent);
+    background-size: 400% 400%;
+    -webkit-animation: MovingGradient 12s ease-in-out infinite;
+}
+
+@-webkit-keyframes MovingGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 150% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

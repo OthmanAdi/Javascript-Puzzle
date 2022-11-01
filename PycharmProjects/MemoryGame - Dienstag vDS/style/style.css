@@ -1,0 +1,57 @@
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.CardsContainer {
+    height: 100vh;
+    background: lavenderblush;
+    /*Bei standard, setzt sie die Kinder von einen div in ihre eigenen Reihen*/
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.el1 {
+    background: chocolate;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 5;
+}
+
+.el2 {
+    background: rosybrown;
+    grid-column: 5 / span 2;
+    grid-row: 2 / span 5;
+}
+
+.el3 {
+    background: lightcyan;
+    grid-column: 8 / span 2;
+    grid-row: 2 / span 5;
+}
+
+.el4 {
+    background: cornsilk;
+    grid-column: 2 / span 2;
+    grid-row: 8 / span 5;
+}
+
+.el5 {
+    background: darkseagreen;
+    grid-column: 5 / span 2;
+    grid-row: 8 / span 5;
+}
+
+.el6 {
+    background: darkslategray;
+    grid-column: 8 / span 2;
+    grid-row: 8 / span 5;
+}
